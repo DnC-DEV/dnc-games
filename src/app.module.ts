@@ -15,7 +15,7 @@ import { ProdutoModule } from './Poduto/Produto.module';
       password: 'root',
       database: 'db_lojaGames',
       entities: [Produto, Categoria],
-      synchronize: true,
+      synchronize: true
     }),
     ProdutoModule,
     CategoriaModule

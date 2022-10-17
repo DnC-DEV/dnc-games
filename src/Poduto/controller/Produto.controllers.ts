@@ -20,13 +20,13 @@ export class ProdutoController {
         @Param('id', ParseIntPipe) id: number): Promise<Produto> {
         return this.produtoService.findById(id);
     }
-    @Get('/descricao/:descricao')
+    @Get('/nome/:nome')
     @HttpCode(HttpStatus.OK)
-    findByDescricao(
-        @Param('descricao')
-        descricao: string
+    findByNome(
+        @Param('nome')
+        nome: string
     ): Promise<Produto[]> {
-        return this.produtoService.findByDescricao(descricao);
+        return this.produtoService.findByNome(nome);
     }
     @Post()
     @HttpCode(HttpStatus.CREATED)
