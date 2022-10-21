@@ -55,16 +55,16 @@ export class CategoriaService {
   /**
    * @desc Cria uma categoria do banco de dados
    * @param categoria O indetificador da categoria a ser criada
-   * @returns Conteúdo vazio
+   * @returns A categoria criada
    */
   async create(categoria: Categoria): Promise<Categoria> {
     return await this.categoriaRepository.save(categoria);
   }
   /**
-   * @desc Atualiza uma categoria do banco de dados
+   * @desc Atualiza a categoria do banco de dados
    * @param categoria O indetificador da categoria a ser atualizado
-   * @returns Conteúdo vazio
-   * @throws HttpException Caso o id informado não seja encontrado
+   * @returns Conteúdo atualizado
+   * @throws HttpException Caso a categoria informado não seja encontrado
    */
   async update(categoria: Categoria): Promise<Categoria> {
     const buscaCategoria = await this.findById(categoria.id);
