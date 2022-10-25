@@ -19,6 +19,7 @@ import { ProdutoModule } from './Poduto/Produto.module';
     }),
     ProdutoModule,
     CategoriaModule,
+    AppModule
   ],
   controllers: [],
   providers: [],

@@ -7,6 +7,8 @@ import {
   ParseIntPipe,
 } from '@nestjs/common';
 import { Body, Delete, Post, Put } from '@nestjs/common/decorators';
+import { Usuario } from 'src/Usuario/entities/usuario.entity';
+import { ManyToOne } from 'typeorm';
 import { Produto } from '../entities/Produtos.entity';
 import { ProdutoService } from '../services/Produto.service';
 
@@ -56,4 +58,8 @@ export class ProdutoController {
   ) {
     return this.produtoService.delete(id);
   }
+  @ManyToOne(() => Usuario, (usuario) => usuario.produto, {
+    onDelete: 'CASCADE',
+  })
+  usuario: Usuario;
 }
