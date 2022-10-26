@@ -1,5 +1,5 @@
 import { IsNotEmpty } from 'class-validator';
-import { Produto } from 'src/Poduto/entities/Produtos.entity';
+import { Produto } from '../../Poduto/entities/Produtos.entity';
 import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity({ name: 'tb_categoria' })

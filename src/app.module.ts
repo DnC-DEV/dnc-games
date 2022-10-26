@@ -15,7 +15,7 @@ import { UsuarioModule } from './Usuario/usuario.module';
       port: 3306,
       username: 'root',
       password: 'root',
-      database: 'db_lojaGames',
+      database: 'db_lojagames',
       entities: [Produto, Categoria, Usuario],
       synchronize: true,
     }),

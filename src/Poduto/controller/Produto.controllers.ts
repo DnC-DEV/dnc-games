@@ -7,7 +7,7 @@ import {
   ParseIntPipe,
 } from '@nestjs/common';
 import { Body, Delete, Post, Put } from '@nestjs/common/decorators';
-import { Usuario } from 'src/Usuario/entities/usuario.entity';
+import { Usuario } from '../../Usuario/entities/usuario.entity';
 import { ManyToOne } from 'typeorm';
 import { Produto } from '../entities/Produtos.entity';
 import { ProdutoService } from '../services/Produto.service';
