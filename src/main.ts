@@ -10,9 +10,9 @@ async function bootstrap() {
 
 
   const config = new DocumentBuilder()
-  .setTitle('Comunidade Organica')
-  .setDescription(' Projeto Comunidade Orgnanica')
-  .setContact('Comunidade Organica', 'https://github.com/comuniorg', 'comuni.organacia@gmail.com')
+  .setTitle('DnC Games')
+  .setDescription(' Projeto loja de games')
+  .setContact('DnC Games', 'https://github.com/DnC-DEV/Dnc-Games', 'daniel.correa1907@hotmail.com')
   .setVersion('1.0')
   .addBearerAuth()
   .build();
