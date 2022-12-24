@@ -11,7 +11,7 @@ import { Categoria } from '../entities/categoria.entity';
 import { CategoriaService } from '../services/categoria.service';
 
 @Controller('/categoria')
-export class categoriaController {
+export class CategoriaController {
   constructor(private readonly categoriaService: CategoriaService) {}
 
   @Get()
