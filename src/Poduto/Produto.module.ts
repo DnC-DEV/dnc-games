@@ -5,11 +5,11 @@ import { CategoriaService } from '../Categoria/services/categoria.service';
 import { ProdutoController } from './controller/Produto.controllers';
 import { Produto } from './entities/Produtos.entity';
 import { ProdutoService } from './services/Produto.service';
-import { Bcrypt } from 'src/Auth/Bcrypt/bcrypt';
+import { Bcrypt } from '../Auth/Bcrypt/bcrypt';
 
 @Module({
-  imports: [TypeOrmModule.forFeature([Produto])],
-  providers: [ProdutoService, Bcrypt],
+  imports: [TypeOrmModule.forFeature([Produto]),CategoriaModule],
+  providers: [ProdutoService, CategoriaService],
   controllers: [ProdutoController],
   exports: [TypeOrmModule],
 })
